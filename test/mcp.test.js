@@ -37,6 +37,13 @@ test("MCP client discovers and calls the read-only tools", async () => {
     assert.equal(response.structuredContent.county, "Orange");
     assert.equal(response.structuredContent.participating_facilities, 215);
 
+    const counties = await client.callTool({
+      name: "list_counties",
+      arguments: {},
+    });
+    assert.equal(counties.structuredContent.items.length, 15);
+    assert.equal(counties.structuredContent.items[0].county, "Los Angeles");
+
     const resources = await client.listResources();
     assert.deepEqual(
       resources.resources.map((resource) => resource.uri).sort(),

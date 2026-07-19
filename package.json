@@ -14,6 +14,7 @@
     "LICENSE",
     "DATA-LICENSE.md",
     "CITATION.cff",
+    "Dockerfile",
     "glama.json"
   ],
   "scripts": {

@@ -24,9 +24,10 @@ const server = new McpServer(
 );
 
 function result(value) {
+  const structuredContent = Array.isArray(value) ? { items: value } : value;
   return {
     content: [{ type: "text", text: JSON.stringify(value, null, 2) }],
-    structuredContent: value,
+    structuredContent,
   };
 }
 

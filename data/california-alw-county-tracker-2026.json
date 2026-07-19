@@ -1,0 +1,145 @@
+{
+  "name": "California ALW County Availability Tracker 2026",
+  "description": "Participating Assisted Living Waiver (Medi-Cal HCBS) facilities and licensed participant-enrollment-unit (PEU) capacity for every California county where the waiver operates, plus the statewide enrollment and waitlist figures published by DHCS. The Assisted Living Waiver operates in 15 of California's 58 counties. DHCS publishes enrollment and waitlist only at the statewide level; per-county facility counts and capacity are derived from the DHCS GIS participating-facilities dataset.",
+  "version": "2026.1",
+  "datePublished": "2026-05-30",
+  "dateModified": "2026-05-30",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "spatialCoverage": "California, United States",
+  "temporalCoverage": "2026",
+  "creator": "California Care Compass",
+  "source_access_date": "2026-05-30",
+  "sources": [
+    {
+      "publisher": "California Department of Health Care Services",
+      "title": "Assisted Living Waiver participating facilities (GIS dataset)",
+      "url": "https://gis.dhcs.ca.gov/datasets/CADHCS::alw-assisted-living-facilities/about"
+    },
+    {
+      "publisher": "California Department of Health Care Services",
+      "title": "Assisted Living Waiver enrollment and waitlist dashboard",
+      "url": "https://www.dhcs.ca.gov/services/long-term-care-alternatives-home-and-community-based-service-options/assisted-living-waiver/"
+    },
+    {
+      "publisher": "California Department of Health Care Services",
+      "title": "PACE application pause, Policy Letter 25-002 (effective 2025-11-20)",
+      "url": "https://www.dhcs.ca.gov/services/ltc/Documents/PL-25-02-Application-Pause.pdf"
+    }
+  ],
+  "statewide": {
+    "enrolled": 14847,
+    "waitlist": 18365,
+    "as_of": "2025-12",
+    "note": "DHCS publishes enrollment and waitlist as a single statewide figure on its monthly ALW dashboard, not by county."
+  },
+  "counties_with_alw": 15,
+  "counties_total_california": 58,
+  "counties": [
+    {
+      "county": "Los Angeles",
+      "participating_facilities": 404,
+      "licensed_capacity_peu": 17688,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "Orange",
+      "participating_facilities": 215,
+      "licensed_capacity_peu": 5155,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "Riverside",
+      "participating_facilities": 132,
+      "licensed_capacity_peu": 3571,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "San Diego",
+      "participating_facilities": 89,
+      "licensed_capacity_peu": 2624,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "San Bernardino",
+      "participating_facilities": 69,
+      "licensed_capacity_peu": 2359,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "Sacramento",
+      "participating_facilities": 81,
+      "licensed_capacity_peu": 2032,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "Fresno",
+      "participating_facilities": 96,
+      "licensed_capacity_peu": 1695,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "Alameda",
+      "participating_facilities": 22,
+      "licensed_capacity_peu": 1132,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "Kern",
+      "participating_facilities": 47,
+      "licensed_capacity_peu": 672,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "San Joaquin",
+      "participating_facilities": 13,
+      "licensed_capacity_peu": 633,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "Contra Costa",
+      "participating_facilities": 35,
+      "licensed_capacity_peu": 596,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "Santa Clara",
+      "participating_facilities": 5,
+      "licensed_capacity_peu": 270,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "San Mateo",
+      "participating_facilities": 6,
+      "licensed_capacity_peu": 248,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "Sonoma",
+      "participating_facilities": 7,
+      "licensed_capacity_peu": 210,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    },
+    {
+      "county": "San Francisco",
+      "participating_facilities": 3,
+      "licensed_capacity_peu": 180,
+      "alw_available": true,
+      "county_waitlist_status": "Statewide waitlist applies; DHCS does not publish a county-level waitlist count"
+    }
+  ]
+}

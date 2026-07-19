@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this MCP server or its bundled prepared data, please cite the California ALW County Availability Tracker."
+title: "California Assisted Living Waiver MCP Server"
+type: software
+version: 1.0.0
+date-released: 2026-07-19
+authors:
+  - family-names: Ichaki
+    given-names: Assaf
+repository-code: "https://github.com/asafichaki/california-alw-mcp"
+url: "https://californiacarecompass.com/data/california-alw-county-tracker-2026"
+license: MIT
+preferred-citation:
+  type: dataset
+  title: "California ALW County Availability Tracker 2026"
+  version: "2026.1"
+  year: 2026
+  authors:
+    - name: "California Care Compass"
+  url: "https://californiacarecompass.com/data/california-alw-county-tracker-2026"

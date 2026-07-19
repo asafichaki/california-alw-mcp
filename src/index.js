@@ -31,6 +31,13 @@ function result(value) {
   };
 }
 
+const readOnlyAnnotations = {
+  readOnlyHint: true,
+  destructiveHint: false,
+  idempotentHint: true,
+  openWorldHint: false,
+};
+
 server.registerTool(
   "get_program_summary",
   {
@@ -38,6 +45,7 @@ server.registerTool(
     description:
       "Return statewide enrollment, statewide waitlist, participating provider-record count, county coverage, licensed PEU capacity, sources, dates, license, and interpretation cautions.",
     inputSchema: {},
+    annotations: readOnlyAnnotations,
   },
   async () => result(programSummary()),
 );
@@ -49,6 +57,7 @@ server.registerTool(
     description:
       "List all 15 counties with participating ALW facilities, including provider-record counts and licensed PEU capacity. Does not fabricate county waitlist values.",
     inputSchema: {},
+    annotations: readOnlyAnnotations,
   },
   async () => result(listCounties()),
 );
@@ -62,6 +71,7 @@ server.registerTool(
     inputSchema: {
       county: z.string().min(1).describe("County name, with or without 'County'"),
     },
+    annotations: readOnlyAnnotations,
   },
   async ({ county }) => {
     const summary = countySummary(county);
@@ -96,6 +106,7 @@ server.registerTool(
       zip_code: z.string().optional().describe("Optional ZIP or ZIP prefix"),
       limit: z.number().int().min(1).max(50).default(20),
     },
+    annotations: readOnlyAnnotations,
   },
   async ({ query, county, city, zip_code: zipCode, limit }) =>
     result({
@@ -112,6 +123,7 @@ server.registerTool(
     description:
       "Return provenance, normalization method, limitations, license, suggested citation, canonical tracker, and publisher business disclosure.",
     inputSchema: {},
+    annotations: readOnlyAnnotations,
   },
   async () => result(methodology()),
 );

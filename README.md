@@ -1,5 +1,7 @@
 # California Assisted Living Waiver MCP server
 
+[![GitMCP](https://img.shields.io/endpoint?url=https://gitmcp.io/badge/asafichaki/california-alw-mcp)](https://gitmcp.io/asafichaki/california-alw-mcp)
+
 A read-only [Model Context Protocol](https://modelcontextprotocol.io/) server for
 California Medi-Cal Assisted Living Waiver (ALW) data. It lets AI assistants
 query 1,224 public DHCS participating-provider records, compare the 15 counties
@@ -34,6 +36,10 @@ Node.js 20 or newer is required.
   }
 }
 ```
+
+For a zero-install documentation and source-search endpoint, connect an
+MCP-compatible assistant to
+`https://gitmcp.io/asafichaki/california-alw-mcp`.
 
 For a local checkout:
 
